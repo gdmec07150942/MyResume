@@ -882,4 +882,18 @@ header .right > a {
 
 }
 
+#image .image {
+    display: none; /*隐藏模态框*/
+    width: 100%;
+    height: 100%;
+    position: fixed; /*定位方式为固定定位*/
+    overflow: auto; /*不滚动*/
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 0px;
+    left: 0px;
+    z-index: 1; /*置于页面图层之上*/
+}
+
+
+
 /*# sourceMappingURL=base.css.map */

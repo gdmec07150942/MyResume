@@ -83,10 +83,34 @@
             </div>
 
         </div>
+        <div id="weixin" style="display:none;
+      width: 25%;
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);  ">
+            <img src="images/wx.jpg">
+        </div>
+        <div id="qq" style="display:none;
+      width: 25%;
+  margin: auto;
+  position: absolute;
+  top: 50%; left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+          transform: translate(-50%,-50%);  ">
+            <img src="images/qq.jpg">
+        </div>
     </div> <!-- /intro-content -->
-    <div id="app">
-        <example></example>
-    </div>
+
+    <ul class="intro-social">
+        <li><a href="https://github.com/gdmec07150942"><i class="fa fa-github" title="我的github"></i></a></li>
+        <li><a href="" onclick="weixin()"> <i class="fa fa-weixin" title="我的微信"></i></a></li>
+        <li><a href=""  onclick="qq()"><i class="fa fa-qq" title="我的扣扣"></i></a></li>
+        <li><a href="http://weibo.com/u/5731550805/home"><i class="fa fa-weibo" title="我的微博"></i></a></li>
+    </ul>
     <!-- /intro-social -->
 
 </section> <!-- /intro -->
@@ -116,8 +140,7 @@
         <div class="col-six tab-full">
 
             <h3>我的档案</h3>
-            <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia
-                consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+
 
             <ul class="info-list">
                 <li>
@@ -148,8 +171,6 @@
         <div class="col-six tab-full">
 
             <h3>我的技能</h3>
-            <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia
-                consectetur nisi commodo ea magna pariatur nisi cillum.</p>
 
             <ul class="skill-bars">
                 <li>
@@ -520,10 +541,32 @@
         winNode.hide("slow");
     }
 
+    function weixin() {
+        var image = document.getElementById('weixin');
+        if (image.style.display =="none") {
+            image.style.display = "block";
+            event.preventDefault();
+        } else {
+            image.style.display = "none";
+        }
+
+        event.preventDefault();
+    }
+    function qq() {
+        var image = document.getElementById('qq');
+        if (image.style.display =="none") {
+            image.style.display = "block";
+            event.preventDefault();
+        } else {
+            image.style.display = "none";
+        }
+
+        event.preventDefault();
+    }
+
 
 </script>
 
-<script src="{{ mix('js/app.js') }}"></script>
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/main.js"></script>
